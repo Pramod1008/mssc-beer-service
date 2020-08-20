@@ -36,7 +36,7 @@ public class BeerDto {
 
     @Positive
     @NotNull
-    private String upc;
+    private Long upc;
 
     private Integer quantityOnHand;
 

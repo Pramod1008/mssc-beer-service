@@ -24,6 +24,6 @@ public class BeerController {
 
     @PutMapping({"/{beerId}"})
     public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId,@RequestBody @Validated BeerDto beerDto){
-        return new ResponseEntity(HttpStatus.CREATED);
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 }
