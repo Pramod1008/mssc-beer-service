@@ -9,6 +9,7 @@ import org.mapstruct.Mapper;
 @DecoratedWith(BeerMapperDecorator.class)
 public interface BeerMappers {
     BeerDto beerToBeerDto(Beer beer);
+    BeerDto beerToBeerDtoWithInventory(Beer beer);
     Beer beerDtoToBeer(BeerDto beerDto);
 }
 
